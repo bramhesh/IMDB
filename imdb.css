@@ -1,0 +1,60 @@
+body{
+	font-size: 16px;
+}
+
+.back{
+	display: none;
+}
+
+button{
+	border: 1px dotted black;
+	margin-left: 1vh;
+	border-radius: 1vh;
+	cursor: pointer;
+}
+
+.header{
+	text-align: center;
+	background-color: antiquewhite;
+	padding: 8vh;
+	border-radius: 2vh;	
+	box-shadow: 0 0 20px black;
+}
+
+.hoverButton{
+	box-shadow: 5px 4px 12px 0px black;
+}
+
+.back{
+  padding-top: 6vh; 
+}
+
+.row{
+	padding: 1vh 1vh;
+}
+
+#title,#result{
+	text-align: center;
+	font-size: 5vh;
+}
+
+#poster{
+	text-align: center;
+}
+
+#result,#title,.combine,#year,#rated,#released,#runtime,#genre,#director,#writer,#actors,#plot,#language,#country,#awards,#metascore,#imdbRating,#imdbVotes,#imdbID,#Type,#DVD,#BoxOffice,#Production,#website,#response{
+	background: white;
+	padding: 8px;
+	border: 5px solid burlywood;
+	box-shadow: 2px 4px #888888;
+	border-radius: 14px;
+	margin-top:	 12px;
+}
+
+.posteri{
+	background:	#9ADFDD;
+	border: 5px solid burlywood;
+	border-radius: 14px;
+	box-shadow: 2px 4px #888888;
+	margin-bottom: 12px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0 ,user-scalable=no" >
+    <title>IMDB Movie Search</title>
+    <link rel="stylesheet" type="text/css" href="imdb.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">       
+
+</head>
+<body>
+    <div class="jumbotron">
+         <h1 class="display-4">IMDB Movie Finder</h1>
+         <p class="lead">A simple app that searches any movie from the imdb database.</p>
+    </div>
+
+    <div class="container header">
+        <div class="row">
+            <div class="col-12 col-md-5" style="padding-bottom: 2px">
+                <h4><i>Search via IMDB ID</i></h4>
+                <input id="inputId" type="text" onfocus="this.value=''" placeholder=" IMDB Id..." size="20"/>
+                <button id="btnId">Search</button>            
+            </div>
+            <div class="col-12 col-md-2"><h3>OR</h3></div>
+            <div class="col-12 col-md-5" style="padding-bottom: 2px">
+                <h4><i>Search via Movie Name and Year</i></h4>
+                <input id="inputName" type="text" onfocus="this.value=''" placeholder=" Movie Name" size="15"/>
+                <input id="inputYear" type="text" onfocus="this.value=''" placeholder=" Year" size="10"/>
+                <button id="btnName">Search</button>  
+            </div>
+        </div>
+    </div>
+
+    <div class="container back">
+
+        <div class="row">
+            <div class="col-12" id="result"><h3>Searched Movie:</h3></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="title"><b>Title:</b></div>
+        </div>
+
+        <br>
+            <div id="poster"></div>
+        
+        <div class="row">
+            <div class="col-12 col-sm-6" id="runtime"><b>Runtime:</b></div>
+            <div class="col-12 col-sm-6" id="director"><b>Director:</b></div>
+        </div>    
+
+        <div class="row">
+            <div class="col-6 col-sm-4" id="year"><b>Year:</b></div>
+            <div class="col-6 col-sm-4" id="rated"><b>Rated:</b></div>
+            <div class="col-12 col-sm-4" id="genre"><b>Genre:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="writer"><b>Writer:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="actors"><b>Actors:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="plot"><b>Plot:</b></div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-12 col-sm-6" id="language"><b>Language:</b></div>
+            <div class="col-12 col-sm-6" id="country"><b>Country:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="awards"><b>Awards:</b></div>
+        </div>
+        
+       <div class="combine">
+            <div  class="row" id="rating" >
+                <div class="col-7 col-sm-6 col-xl-4"><b>Source:</b></div>
+                <div class="col-5 col-sm-6 col-xl-8"><b>Value:</b></div>
+            </div>
+        <div class="row" id="ratings"></div>
+        </div>
+
+        <div  class="row">
+            <div class="col-12 col-sm-4 col-xl-2" id="metascore"><b>Metascore:</b></div>
+            <div class="col-12 col-sm-4 col-xl-2" id="imdbRating"><b>ImdbRating:</b></div>
+            <div class="col-12 col-sm-4 col-xl-3" id="imdbVotes"><b>ImdbVotes:</b></div>
+            <br>
+            <div class="col-12 col-sm-6 col-xl-3" id="imdbID"><b>ImdbID:</b></div>
+            <div class="col-12 col-sm-6 col-xl-2" id="Type"><b>Type:</b></div>
+        </div>
+        <div  class="row">
+            <div class="col-12 col-sm-3" id="DVD"><b>DVD:</b></div>
+            <div class="col-12 col-sm-5" id="BoxOffice"><b>BoxOffice:</b></div>
+            <div class="col-12 col-sm-4" id="Production"><b>Production:</b></div>
+        </div>
+        <div  class="row">
+            <div class="col-12 col-sm-9 col-xl-6" id="website"><b>Website:</b></div>
+            <div class="col-12 col-sm-3 col-xl-6" id="response"><b>Response:</b></div>
+        </div>
+        <br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="imdb.js"></script>
+</body>
+</html>
